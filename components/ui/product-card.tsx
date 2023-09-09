@@ -40,7 +40,7 @@ const ProductCard: React.FC<ProductCard> = ({
   
   return ( 
     <div onClick={handleClick} className="bg-white group cursor-pointer rounded-xl border p-3 space-y-4">
-      {/* Image & actions */}
+      {/* Hình ảnh và Lựa Chọn */}
       <div className="aspect-square rounded-xl bg-gray-100 relative">
         <Image 
           src={data.images?.[0]?.url} 
@@ -61,12 +61,12 @@ const ProductCard: React.FC<ProductCard> = ({
           </div>
         </div>
       </div>
-      {/* Description */}
+      {/* Sự miêu tả */}
       <div>
         <p className="font-semibold text-lg">{data.name}</p>
         <p className="text-sm text-gray-500">{data.category?.name}</p>
       </div>
-      {/* Price & Reiew */}
+      {/* Giá tiền & Đánh giá */}
       <div className="flex items-center justify-between">
         <Currency value={data?.price} />
       </div>
